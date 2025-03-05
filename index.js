@@ -3,11 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-app.use(cors({
-  origin: 'https://bank-server-4scn.onrender.com',
-  credentials: true
-}));
-
+app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
 
 // ✅ Root API
