@@ -3,7 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({
+  origin: 'https://bank-frontend-6niu.onrender.com',
+  credentials: true
+}));
+
 app.use(express.json());
 
 // ✅ Root API
@@ -132,3 +136,4 @@ app.post("/withdraw", async (req, res) => {
       res.json({ success: false, message: "User not found" });
   }
 });
+
