@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors({
-  origin: 'https://bank-frontend-6niu.onrender.com',
+  origin: 'https://bank-server-4scn.onrender.com',
   credentials: true
 }));
 
